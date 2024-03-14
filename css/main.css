@@ -1,0 +1,271 @@
+.hidden {
+    display: none;
+}
+
+html, body{
+  height:100%;
+  padding:0;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  background:white;
+
+
+}
+
+
+header {
+
+    background: linear-gradient(0.3deg, rgb(145, 145, 145) 0.9%, rgb(33, 33, 33) 88.6%);
+    padding: 40px 40px;
+}
+
+#main-logo {
+    width: 20%;
+    display: block;
+    margin: 0 auto; 
+    box-shadow: 3px 4px 5px rgba(0,0,0,.5);
+}
+
+#sports_nav {
+    background-color: #666666;
+    background-image: url(../images/bg1.jpg);
+   background-size:cover;
+    background-blend-mode: multiply;
+    height: 230px;
+    background-position-y:100%;
+    background-repeat: no-repeat;
+    padding: 80px 80px; 
+
+    height:900px;
+}
+
+.sports{
+    padding:0 10px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+
+.sports li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sports li{
+    cursor:pointer;
+    height:415px;
+    margin:5px 5px;
+    transition: box-shadow .5s ease; 
+}
+
+.sports li:hover {
+    box-shadow: 0 1200px 0 rgb(83, 83, 83) inset;
+}
+
+.sports li h3 {
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.sprite{
+    width:290px;
+    height:350px;
+    background-image: url('../images/2500sprite.png');
+}
+
+/*Start Of Initial Images With No Hover*/
+
+#Skiing{
+    background-position:  -50px 0;
+    background-position-y: 8%;
+}
+#moto{
+   background-position:  -550px 0;
+   background-position-y: 5%;
+}
+
+#kayaking{
+    background-position:  -950px 0;
+    background-position-y: 15%;
+}
+
+#surfing{
+    background-position:  -1295px 0;
+    background-position-y: 15%;
+}
+
+#archery{
+    background-position:  -1760px 0;
+    background-position-y: 15%;
+}
+
+#rockclimbing{
+    background-position:  -2160px 0;
+    background-position-y: 29%;
+}
+/*End Of Initial Images With No Hover */
+
+/*Start Of Initial Images With Hover*/
+
+#kayaking:hover{
+    background-position-y: -50%;
+    background-color: #0005; /* Black with 50% opacity */
+    background-blend-mode: darken;
+}
+
+
+#Skiing:hover{
+    background-position-y: -62%;
+    background-color: #0005; /* Black with 50% opacity */
+    background-blend-mode: darken;
+}
+#moto:hover{
+    background-position-y: -55%;
+    background-color: #0005; /* Black with 50% opacity */
+    background-blend-mode: darken;
+}
+
+#surfing:hover{
+    background-position-y: -60%;
+    background-color: #0005; /* Black with 50% opacity */
+    background-blend-mode: darken;
+}
+
+#archery:hover{
+    background-position-y: -64%;
+    background-color: #0005; /* Black with 50% opacity */
+    background-blend-mode: darken;
+}
+
+#rockclimbing:hover{
+    background-position-y: -60%;
+    background-color: #0005; /* Black with 50% opacity */
+    background-blend-mode: darken;
+}
+
+/*End Of Initial Images With Hover*/
+
+
+article, #instructions {
+    padding: 20px;
+    margin-bottom:20px;
+}
+
+article h3, #instructions h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article p, #instructions p{
+    font-size:  14px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size:  12px;
+    color:white;
+}
+
+.sticky_footer {
+    height: 50px;
+    background: rgb(22, 22, 22);
+    background: linear-gradient(90deg, rgb(85, 85, 85) 0%, rgb(14, 14, 14) 44%, rgb(98, 98, 99) 100%);
+    position: sticky;
+    top: 100%;
+    padding: 30px;
+}
+
+.lightbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    background-color: rgba(16, 16, 16, 0.85);
+    background-image: url('../images/skii_lightbox.png');
+    background-repeat: no-repeat;
+    background-size: 80vh;
+    display: none;
+    background-position: 45%;
+    color:white;
+
+}
+
+
+#lightbox2 {
+    background-image: url(../images/motocross_lightbox.png);
+    background-size:20%;
+    background-position-x: 47%;
+}
+
+#lightbox3 {
+    background-image: url(../images/kayaking_lightbox.png);
+    background-size:34%;
+    background-position-x: 50%;
+    background-position-y: 80%; 
+}
+
+#lightbox4 {
+    background-image: url(../images/Surfing_lightbox.png);
+    background-position-x: 50%;
+    background-position-y: -200%;
+    background-size:40%;
+
+}
+
+#lightbox5 {
+    background-image: url(../images/archery_lightbox.png);
+    background-position-x: 46%;
+}
+
+#lightbox6 {
+    background-image: url(../images/rockc_lightbox.png);
+    background-size:30%;
+    background-position-y: 310px;
+    background-position-x: 55%;
+}
+
+.lightbox_close {
+    position: absolute;
+     /*by default X symbol is on left*/
+     /*code below puts it on right side*/
+    top: 50px;
+    right: 135px;
+    color: #fff;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: bolder;
+
+    transition: all .5s ease-in-out;
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: blue;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 20%;
+
+    padding-top: 80px;
+}
+
+.lb_text, .lb_heading {
+    text-align: center;
+}
+
+.lb_text {
+    line-height: 25px;
+}
+
+
+.lightbox:target {
+    display: block;
+}
